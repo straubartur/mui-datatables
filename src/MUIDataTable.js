@@ -84,6 +84,7 @@ class MUIDataTable extends React.Component {
       page: PropTypes.number,
       count: PropTypes.number,
       filterList: PropTypes.array,
+      searchText: PropTypes.string,
       rowsSelected: PropTypes.array,
       rowsPerPage: PropTypes.number,
       rowsPerPageOptions: PropTypes.array,
@@ -213,7 +214,7 @@ class MUIDataTable extends React.Component {
   };
 
   setTableOptions(props) {
-    const optionNames = ["rowsPerPage", "page", "rowsSelected", "filterList", "rowsPerPageOptions"];
+    const optionNames = ["rowsPerPage", "page", "rowsSelected", "searchText", "filterList", "rowsPerPageOptions"];
     const optState = optionNames.reduce((acc, cur) => {
       if (this.options[cur] !== undefined) {
         acc[cur] = this.options[cur];
