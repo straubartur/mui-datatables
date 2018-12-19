@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregnb/mui-datatables.git"
+    "url": "git+https://github.com/straubartur/mui-datatables.git"
   },
   "keywords": [
     "material-ui",
